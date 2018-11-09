@@ -2,7 +2,7 @@ require('app-module-path').addPath(process.cwd());
 
 const sequelize = require('src/database/sequelize');
 
-sequelize
+sequelize()
   .authenticate()
   .then(() => {
     console.log('Connection has been established successfully.');

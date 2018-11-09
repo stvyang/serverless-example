@@ -4,7 +4,7 @@ require('src/models');
 
 const sequelize = require('src/database/sequelize');
 
-sequelize
+sequelize()
   .sync({ force: true })
   .then(() => {
     console.log('Sync DB Success');
